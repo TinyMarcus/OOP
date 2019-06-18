@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>805</width>
+    <height>740</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>805</width>
+    <height>740</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>805</width>
+    <height>740</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Лабораторная работа №1 (ООП)</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>3</x>
+      <y>3</y>
+      <width>800</width>
+      <height>600</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>800</width>
+      <height>600</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>800</width>
+      <height>600</height>
+     </size>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="interactive">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonScale">
+    <property name="geometry">
+     <rect>
+      <x>191</x>
+      <y>673</y>
+      <width>151</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Масштабировать</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditScaleX">
+    <property name="geometry">
+     <rect>
+      <x>364</x>
+      <y>678</y>
+      <width>63</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditScaleY">
+    <property name="geometry">
+     <rect>
+      <x>435</x>
+      <y>678</y>
+      <width>63</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditScaleZ">
+    <property name="geometry">
+     <rect>
+      <x>507</x>
+      <y>678</y>
+      <width>63</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>385</x>
+      <y>659</y>
+      <width>21</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>kx</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>459</x>
+      <y>659</y>
+      <width>21</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ky</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>531</x>
+      <y>659</y>
+      <width>21</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>kz</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>391</x>
+      <y>611</y>
+      <width>20</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonRotate">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>622</y>
+      <width>151</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Повернуть</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditRotateX">
+    <property name="geometry">
+     <rect>
+      <x>584</x>
+      <y>625</y>
+      <width>63</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditRotateY">
+    <property name="geometry">
+     <rect>
+      <x>657</x>
+      <y>625</y>
+      <width>63</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditRotateZ">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>625</y>
+      <width>63</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_22">
+    <property name="geometry">
+     <rect>
+      <x>612</x>
+      <y>606</y>
+      <width>21</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>x</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_23">
+    <property name="geometry">
+     <rect>
+      <x>686</x>
+      <y>606</y>
+      <width>21</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>y</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_24">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>607</y>
+      <width>21</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>z</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonTranslate">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>622</y>
+      <width>151</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Переместить</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditTranslateX">
+    <property name="geometry">
+     <rect>
+      <x>169</x>
+      <y>625</y>
+      <width>63</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditTranslateZ">
+    <property name="geometry">
+     <rect>
+      <x>242</x>
+      <y>625</y>
+      <width>63</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditTranslateY">
+    <property name="geometry">
+     <rect>
+      <x>315</x>
+      <y>625</y>
+      <width>63</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_25">
+    <property name="geometry">
+     <rect>
+      <x>195</x>
+      <y>606</y>
+      <width>21</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>dx</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_26">
+    <property name="geometry">
+     <rect>
+      <x>268</x>
+      <y>606</y>
+      <width>21</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>dy</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_27">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>606</y>
+      <width>21</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>dz</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_2">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>648</y>
+      <width>791</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>805</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMenu">
+    <property name="title">
+     <string>&amp;Меню</string>
+    </property>
+    <addaction name="actionLoadModel"/>
+    <addaction name="actionSaveModel"/>
+   </widget>
+   <addaction name="menuMenu"/>
+  </widget>
+  <action name="actionLoadModel">
+   <property name="text">
+    <string>Загрузить 3D-модель</string>
+   </property>
+  </action>
+  <action name="actionSaveModel">
+   <property name="text">
+    <string>Сохранить 3D-модель</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
